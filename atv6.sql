@@ -1,0 +1,19 @@
+-- Inserindo novos valores para orders
+INSERT INTO `orders` (`ORD_NUM`, `ORD_AMOUNT`, `ADVANCE_AMOUNT`, `ORD_DATE`, `CUST_CODE`, `AGENT_CODE`, `ORD_DESCRIPTION`) VALUES
+(01, 1.00, 10.00, '2021-06-07', 'C01', 'A001', ''),
+(02, 2.00, 11.00, '2021-06-07', 'C02', 'A002', ''),
+(03, 3.00, 12.00, '2021-06-07', 'C03', 'A003', ''),
+(04, 4.00, 13.00, '2021-06-07', 'C04', 'A004', ''),
+(05, 5.00, 14.00, '2021-06-07', 'C05', 'A005', ''),
+(06, 6.00, 15.00, '2021-06-07', 'C06', 'A006', ''),
+(07, 7.00, 16.00, '2021-06-07', 'C07', 'A007', ''),
+(08, 8.00, 17.00, '2021-06-07', 'C08', 'A008', ''),
+(09, 9.00, 18.00, '2021-06-07', 'C09', 'A009', ''),
+(010, 10.00, 19.00, '2021-06-07', 'C010', 'A0010', '');
+
+-- Atualizando ORD_DESCRITION
+UPDATE orders SET `ORD_DESCRIPTION`= 'ATUALIZADO' WHERE `ORD_DESCRIPTION` = '';
+
+-- DELETANDO OS ANTIGOS CODS
+
+DELETE FROM orders WHERE `ORD_DESCRIPTION` = 'SOD\r';
